@@ -1,6 +1,9 @@
 version: 0.2
 
 phases:
-  artifacts:
-    files:
-      - '**/*'
+  check:
+    commands:
+      - node -v
+artifacts:
+  files:
+    - '**/*'
