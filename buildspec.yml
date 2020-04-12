@@ -7,3 +7,4 @@ phases:
 artifacts:
   files:
     - '**/*'
+  base-directory: my-first-nuxt-app
