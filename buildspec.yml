@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  check:
+  pre_build:
     commands:
       - node -v
 artifacts:
