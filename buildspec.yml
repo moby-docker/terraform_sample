@@ -12,4 +12,4 @@ phases:
       - yarn run generate
 artifacts:
   files:
-    - 'dist/**/*'
+    - 'my-first-nuxt-app/dist/*'
