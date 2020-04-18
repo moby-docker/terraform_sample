@@ -3,8 +3,13 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - node -v
+      - npm i -g yarn
+      - nim i -g @vue/cli @vue/cli-init
+      - cd my-first-nuxt-app
+      - yarn
+  build:
+    commands:
+      - yarn run generate
 artifacts:
   files:
-    - '**/*'
-  base-directory: my-first-nuxt-app
+    - 'my-first-nuxt-/dist/**/*'
