@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - npm i -g yarn
-      - nim i -g @vue/cli @vue/cli-init
+      - npm i -g @vue/cli @vue/cli-init
       - cd my-first-nuxt-app
       - yarn
   build:
