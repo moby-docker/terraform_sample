@@ -7,7 +7,6 @@ phases:
       - npm install
       - npm install -g contentful-cli
       - npm run import-data -- --space-id o0otsmrrpq9r --management-token CFPAT-tg4zcR_Rl0-sfZfO6Jcj4ztQYqN3vsexyDqLP5Q0-70
-      - source ~/.bashrc
       - contentful login --management-token CFPAT-tg4zcR_Rl0-sfZfO6Jcj4ztQYqN3vsexyDqLP5Q0-70
   build:
     commands:
