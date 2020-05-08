@@ -1,53 +1,111 @@
 <template>
-  <div>
-    <nuxt/>
+  <div class="container">
+    <Greeting></Greeting>
+    <main role="main">
+      <nuxt/>
+    </main>
   </div>
 </template>
 
+<script>
+  import Greeting from '~/components/greeting.vue'
+
+  export default {
+    components: {
+      Greeting
+    }
+  }
+</script>
+
 <style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+  @font-face {
+    font-family: "Avenir";
+    font-weight: 400;
+    font-style: normal;
+    src: url("~/static/avenir-400.woff2") format("woff2");
+    font-display: swap;
+  }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+  body {
+    background: #E1E7EA;
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #373F49;
+  }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+  .wrapper {
+    padding: 2em 0;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+  .header {
+    background: #F7F9FA;
+  }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
+  .page-bar {
+    max-width: 100%;
+    padding: 2em 10%;
+  }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+  .blog.header h2,
+  .tag-page.header h2 {
+    text-align: center;
+    padding: 2.5em 0;
+    color: #A0A0A0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 2em;
+  }
+
+  /* Copy section */
+  .body-container {
+    background: #ffffff;
+  }
+
+  .items-list {
+    overflow: hidden;
+  }
+
+  .item {
+    padding: 1em 3em 1em 0;
+  }
+
+  @media all and (min-width: 600px) {
+    .item {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    .item {
+      width: 33.333%;
+    }
+  }
+
+  /* Shared */
+
+  .tiny {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #A0A0A0;
+  }
+
+  *[class*="-bar"] {
+    border-bottom: 1px solid #EBEBEB;
+  }
+
 </style>
-
