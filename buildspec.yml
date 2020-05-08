@@ -13,4 +13,4 @@ phases:
       - npm run generate
 artifacts:
   files:
-    - 'my-first-nuxt-app/dist/*'
+    - 'my-first-nuxt-app/dist/**/*'
