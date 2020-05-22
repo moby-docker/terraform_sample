@@ -3,7 +3,7 @@
     <header class="blog header">
       <div class="foreground">
         <div class="page-bar wrapper">
-          <a href="/" class="person-name">John Doe</a>
+          <h2 class="person-name">BEENOS Tech Blog</h2>
           <Navigation></Navigation>
         </div>
         <div class="page-info wrapper">

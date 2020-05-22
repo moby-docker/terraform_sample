@@ -3,8 +3,7 @@
     <header class="tag-page header">
       <div class="foreground">
         <div class="page-bar wrapper">
-          <a href="/" class="person-name">John Doe</a>
-          <Navigation></Navigation>
+          <h2 class="person-name">BEENOS Tech Blog</h2>
         </div>
         <div class="page-info wrapper">
           <h2>#{{ tag }}</h2>
